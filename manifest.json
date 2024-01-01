@@ -13,7 +13,7 @@
     "content_scripts": [
       {
         "js": ["content.js"],
-        "matches":["https://en.wikipedia.org/"]
+        "matches":["<all_urls>"]
       }
     ]
   }
