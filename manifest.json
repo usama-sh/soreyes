@@ -12,7 +12,7 @@
     },
     "content_scripts": [
       {
-        "matches": ["*://*.wikipedia.org/*"],
+        "matches": ["*:https://www.wikipedia.org/*"],
         "js": ["content.js"]
       }
     ]
