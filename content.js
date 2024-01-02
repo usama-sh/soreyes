@@ -25,4 +25,4 @@ function findParentParagraph(element) {
     element = element.parentNode;
   }
   return element;
-
+}
