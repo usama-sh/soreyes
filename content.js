@@ -6,7 +6,7 @@ document.addEventListener("mouseover", function (event) {
   
   if (paragraphElement) {
     // Apply highlighting to the paragraph
-    paragraphElement.style.backgroundColor = "yellow";
+    paragraphElement.style.backgroundColor = "lightblue";
   }
 });
 
