@@ -1,17 +1,16 @@
-console.log("Content script is running!");
-
 document.addEventListener("mouseover", function (event) {
   // Check if the hovered element is a paragraph (or a child of a paragraph)
   var paragraphElement = findParentParagraph(event.target);
   
   if (paragraphElement) {
-    // Apply highlighting to the paragraph
+    // Apply a smooth transition to the background color on mouseover
+    paragraphElement.style.transition = "background-color 0.5s ease";
     paragraphElement.style.backgroundColor = "lightgrey";
   }
 });
 
 document.addEventListener("mouseout", function (event) {
-  // Reset the background color on mouseout
+  // Reset the background color with a smooth transition on mouseout
   var paragraphElement = findParentParagraph(event.target);
   
   if (paragraphElement) {
