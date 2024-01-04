@@ -5,7 +5,7 @@ document.addEventListener("mouseover", function (event) {
   if (paragraphElement) {
     // Apply a smooth transition to the background color on mouseover
     paragraphElement.style.transition = "background-color 0.5s ease";
-    paragraphElement.style.backgroundColor = "lightgrey";
+    paragraphElement.style.backgroundColor = "dullblue";
   }
 });
 
