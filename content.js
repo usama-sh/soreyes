@@ -25,3 +25,18 @@ function findParentParagraph(element) {
   }
   return element;
 }
+
+chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
+  if (request.type === 'toggleExtension') {
+    const extensionEnabled = request.enabled;
+
+    // Toggle your highlighting functionality based on extensionEnabled value
+    if (extensionEnabled) {
+      // Enable your highlighting logic
+      alert('Extension enabled!');
+    } else {
+      // Disable your highlighting logic
+      alert('Extension disabled!');
+    }
+  }
+});
